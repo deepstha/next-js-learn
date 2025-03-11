@@ -5,7 +5,7 @@ import AddToCart from './AddToCart';
 const ProductCard = () => {
   console.log('Product page')
   return (
-    <div>
+    <div className='p-5 my-5 text-white text-xl'>
      <AddToCart />
     </div>
   )

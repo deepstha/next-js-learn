@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductCard from "./components/ProductCard";
+import Counter from "./components/Counter";
 
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <h1>Hello world</h1>
       <Link href="/users">Users</Link>
       <ProductCard />
+      <Counter/>
     </main>
   );
 }
