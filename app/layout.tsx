@@ -26,10 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
         <Header/>
-        {children}
+        <div className="container mx-auto">
+          {children}
+        </div>
+        <footer className="bg-slate-900 text-white p-4 text-center fixed bottom-0 w-full">
+          Footer Section
+        </footer>
       </body>
     </html>
   );
